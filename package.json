@@ -27,6 +27,7 @@
 		"watch": "concurrently -k -c magenta,cyan pnpm:watch:*"
 	},
 	"jest": {
+		"onlyChanged": true,
 		"preset": "ts-jest",
 		"testEnvironment": "node"
 	},
