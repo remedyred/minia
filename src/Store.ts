@@ -91,7 +91,6 @@ export class Store {
 				if (this.$has(prop)) {
 					return this.$get(prop)
 				}
-				return undefined
 			},
 			set: (target: Store, prop: string, value: any) => {
 				this.$set(prop, value)
@@ -104,7 +103,6 @@ export class Store {
 				if (key in target) {
 					return this.callGetter(key)
 				}
-				return undefined
 			}
 		})
 
@@ -161,7 +159,7 @@ export class Store {
 	}
 
 	$config(name: string, options?: Partial<StoreOptions>, hydration?: StoreState) {
-		let isPending = !options && !hydration
+		const isPending = !options && !hydration
 		if (!options) {
 			options = {}
 		}
@@ -182,7 +180,7 @@ export class Store {
 		if (!isPending) {
 			hydration = unref(hydration)
 			this.originalState = objectClone(hydration)
-			for (let key in hydration) {
+			for (const key in hydration) {
 				if (this.shouldPersist(key)) {
 					this.loadFromStorage(key)
 				} else {
@@ -193,7 +191,7 @@ export class Store {
 
 		this.actions = actions || {}
 
-		for (let key in getters) {
+		for (const key in getters) {
 			this.getters[key] = computed(getters[key].bind(this, this.$state))
 		}
 
@@ -202,8 +200,8 @@ export class Store {
 
 	$subscribe(...args: any[]) {
 		let callback
-		let keys = []
-		for (let arg of args) {
+		const keys = []
+		for (const arg of args) {
 			if (isCallable(arg)) {
 				callback = arg
 			} else if (isArray(arg)) {
@@ -222,7 +220,7 @@ export class Store {
 		if (isEmpty(keys)) {
 			watchers[this.$id] = watch(() => this.state, callback)
 		} else {
-			for (let key of keys) {
+			for (const key of keys) {
 				watchers[key] = watch(() => this.state[key], callback)
 			}
 		}
@@ -231,7 +229,7 @@ export class Store {
 		return (keys: string[]) => {
 			const watcherKeys = Object.keys(watchers)
 			const keysToRemove = !keys || isSingle(keys, this.$id) || isSingle(watcherKeys, this.$id) ? watcherKeys : keys
-			for (let key of keysToRemove) {
+			for (const key of keysToRemove) {
 				watchers[key]()
 				delete watchers[key]
 			}
@@ -258,7 +256,7 @@ export class Store {
 	}
 
 	$patch(data: StoreState) {
-		for (let key in data) {
+		for (const key in data) {
 			this.$set(key, data[key])
 		}
 	}
