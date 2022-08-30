@@ -42,5 +42,5 @@ useStore.promise = async (name = 'default') => {
 	return minia.get(name)
 }
 
-export {Minia} from './Minia'
-export {Store} from './Store'
+export {Minia, Pending, PromiseResolve, StoreId, Stores, Waiting, WaitingArray} from './Minia'
+export {Store, StoreOptions, StoreKey, StoreValue, StoreState, StoreAction, StoreGetter, StoreActions, StoreGetters} from './Store'
