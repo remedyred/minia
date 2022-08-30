@@ -1,6 +1,8 @@
 import {createStore, Minia, Store} from '../src'
 
-describe('Minia', () => it('new Minia() should be an instance of Minia', () => expect(new Minia()).toBeInstanceOf(Minia)))
+describe('Minia', () => {
+	it('new Minia() should be an instance of Minia', () => expect(new Minia()).toBeInstanceOf(Minia))
+})
 
 describe('createStore', () => {
 	let instance: Store
