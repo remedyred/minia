@@ -32,10 +32,10 @@
 		"testEnvironment": "node"
 	},
 	"dependencies": {
-		"@snickbit/utilities": "~3.4.2",
+		"@snickbit/utilities": "~3.4.3",
 		"localforage": "~1.10.0",
 		"mitt": "~3.0.0",
-		"vue-demi": "~0.13.1"
+		"vue-demi": "~0.13.11"
 	},
 	"devDependencies": {
 		"@snickbit/eslint-config": "1.3.2",
