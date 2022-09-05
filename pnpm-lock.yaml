@@ -21,7 +21,7 @@ specifiers:
   vue-demi: ~0.13.11
 
 dependencies:
-  '@snickbit/utilities': 3.4.3
+  '@snickbit/utilities': 3.4.4
   localforage: 1.10.0
   mitt: 3.0.0
   vue-demi: 0.13.11_vue@3.2.38
@@ -999,8 +999,8 @@ packages:
       - typescript
     dev: true
 
-  /@snickbit/plural/1.0.2:
-    resolution: {integrity: sha512-Qy77SU9BE/AcHldppsspEFoLxxa9glB+bd5MNs4rpeBG8YCBbc+jRuZ0fWCn/u44ix5jlqi/rY5hugw7XG1BMQ==}
+  /@snickbit/plural/1.0.3:
+    resolution: {integrity: sha512-lHMDzr6zmAwZ68QnlJ/jyu/m/4pfUHqgehbyMLNW3gFd0IwjmzkNNG49GlgYBgivK1O4tSE2ahvDd4sTt9EY8g==}
     engines: {node: '>= 12'}
     dev: false
 
@@ -1022,11 +1022,11 @@ packages:
       - supports-color
     dev: true
 
-  /@snickbit/utilities/3.4.3:
-    resolution: {integrity: sha512-G9JGD1RUOkJnDDnmMFAN175BlQ6euKN+AGFnRgvSIsyaWct+Pl2MhG0VrUp5FcYSUJ2VzrJXsYdIpbXiWg1H/g==}
+  /@snickbit/utilities/3.4.4:
+    resolution: {integrity: sha512-sWogjyJBogUQtEe45B6p7koarL1n2PF6Hxf/0Y1VkCXSBGnd2uaQpm7a76GN8wZw8zM5vldMA/sMN03HksINkg==}
     engines: {node: '>= 12'}
     dependencies:
-      '@snickbit/plural': 1.0.2
+      '@snickbit/plural': 1.0.3
       just-camel-case: 6.1.1
       nanoid: 3.3.4
     dev: false
