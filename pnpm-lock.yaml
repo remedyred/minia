@@ -4,7 +4,7 @@ specifiers:
   '@snickbit/eslint-config': 1.3.4
   '@snickbit/semantic-release': 1.6.3
   '@snickbit/utilities': ~3.4.3
-  '@types/jest': 29.1.1
+  '@types/jest': 29.4.0
   eslint: 8.24.0
   jest: 28.1.3
   localforage: ~1.10.0
@@ -28,7 +28,7 @@ dependencies:
 devDependencies:
   '@snickbit/eslint-config': 1.3.4_wikzf3zjzdwilmbukvfvhniz4m
   '@snickbit/semantic-release': 1.6.3_semantic-release@19.0.5
-  '@types/jest': 29.1.1
+  '@types/jest': 29.4.0
   eslint: 8.24.0
   jest: 28.1.3
   semantic-release: 19.0.5
@@ -1128,8 +1128,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/29.1.1:
-    resolution: {integrity: sha512-U9Ey07dGWl6fUFaIaUQUKWG5NoKi/zizeVQCGV8s4nSU0jPgqphVZvS64+8BtWYvrc3ZGw6wo943NSYPxkrp/g==}
+  /@types/jest/29.4.0:
+    resolution: {integrity: sha512-VaywcGQ9tPorCX/Jkkni7RWGFfI11whqzs8dvxF41P17Z+z872thvEvlIbznjPJ02kl1HMX3LmLOonsj2n7HeQ==}
     dependencies:
       expect: 29.1.2
       pretty-format: 29.1.2
