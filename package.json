@@ -40,10 +40,10 @@
 		"vue-demi": "~0.13.11"
 	},
 	"devDependencies": {
-		"@snickbit/eslint-config": "1.3.4",
+		"@snickbit/eslint-config": "1.4.4",
 		"@snickbit/semantic-release": "1.6.3",
 		"@types/jest": "29.1.1",
-		"eslint": "8.24.0",
+		"eslint": "8.35.0",
 		"jest": "28.1.3",
 		"semantic-release": "19.0.5",
 		"shx": "0.3.4",
